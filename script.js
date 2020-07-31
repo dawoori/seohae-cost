@@ -10,6 +10,10 @@ const proportion = [0.15, 0.9, 0.6];
 const mealCost = 2500;
 const snackCost = 500;
 
+calc();
+
+
+
 function calc() {
     const tbody = document.getElementById('cost');
     const level = Number(document.getElementById('level').value);
@@ -20,9 +24,6 @@ function calc() {
 
     const noneSalary = (mealCost * meal + snackCost * snack) * date;
     const Salary = costTable[level][time] * date;
-
-    console.log(noneSalary);
-    console.log(Salary);
 
     for (let i = 0; i < proportion.length; i++) {
         let row = tbody.rows[i];

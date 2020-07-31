@@ -1,7 +1,9 @@
 @import "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500";
 .logo {
-    width: 80%;
-    max-width: 500px;
+  width: 80%;
+  max-width: 500px;
+  display: block;
+  margin: 0px auto;
 }
 .rwd-table {
   margin: 1em 0;
@@ -58,17 +60,27 @@ body {
   text-rendering: optimizeLegibility;
   color: #444;
   background: white;
-  text-align: center;
+}
+
+select, input {
+  margin: 2px;
+  width: 70%;
 }
 
 h1 {
-    font-size: 3em;
+  text-align: center;
+  font-size: 3em;
   font-weight: normal;
   letter-spacing: -1px;
   color: #34495E;
 }
 
+.inp {
+  font-size: 2.5em;
+}
+
 .rwd-table {
+  font-size: 2.3em;
   background: #34495E;
   color: #fff;
   border-radius: .4em;
