@@ -6,7 +6,7 @@ const costTable = [
     [21770, 27210, 37410, 47210, 52320, 56310],
     [21770, 27210, 37410, 47210, 52320, 56310]
 ];
-const proportion = [0.15, 0.9, 0.6];
+const proportion = [0.15, 0.09, 0.06];
 const mealCost = 2500;
 const snackCost = 500;
 
@@ -27,8 +27,8 @@ function calc() {
 
     for (let i = 0; i < proportion.length; i++) {
         let row = tbody.rows[i];
-        row.cells[1].innerHTML = noneSalary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원";
-        row.cells[2].innerHTML = (Salary * proportion[i]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원";
+        row.cells[1].innerHTML = Math.floor(noneSalary).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원";
+        row.cells[2].innerHTML = Math.floor(Salary * proportion[i]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원";
         row.cells[3].innerHTML = (noneSalary + Salary * proportion[i]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원"; 
     }
 

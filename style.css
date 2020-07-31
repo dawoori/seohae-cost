@@ -2,8 +2,6 @@
 .logo {
   width: 80%;
   max-width: 500px;
-  display: block;
-  margin: 0px auto;
 }
 .rwd-table {
   margin: 1em 0;
@@ -53,6 +51,9 @@
 }
 
 body {
+  text-align: center;
+
+  height: 100%;
   padding: 0 2em;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 100%;
@@ -68,7 +69,6 @@ select, input {
 }
 
 h1 {
-  text-align: center;
   font-size: 3em;
   font-weight: normal;
   letter-spacing: -1px;
@@ -80,12 +80,13 @@ h1 {
 }
 
 .rwd-table {
-  font-size: 2.3em;
+  font-size: 1em;
   background: #34495E;
   color: #fff;
   border-radius: .4em;
   overflow: hidden;
 }
+
 .rwd-table tr {
   border-color: #46637f;
 }
@@ -99,4 +100,23 @@ h1 {
 }
 .rwd-table th, .rwd-table td:before {
   color: #dd5;
+}
+
+@media ( min-width: 768px ) {
+  .inp {
+    font-size: 2.5em;
+  }
+  
+  .rwd-table {
+    font-size: 2.5em;
+  }
+}
+@media ( min-width: 1024px ) {
+  .inp {
+    font-size: 1em;
+  }
+  
+  .rwd-table {
+    font-size: 1em;
+  }
 }
