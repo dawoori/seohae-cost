@@ -29,7 +29,7 @@ function calc() {
         let row = tbody.rows[i];
         row.cells[1].innerHTML = Math.floor(noneSalary).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원";
         row.cells[2].innerHTML = Math.floor(Salary * proportion[i]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원";
-        row.cells[3].innerHTML = (noneSalary + Salary * proportion[i]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원"; 
+        row.cells[3].innerHTML = Math.floor(noneSalary + Salary * proportion[i]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원"; 
     }
 
 
