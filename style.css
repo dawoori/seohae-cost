@@ -67,6 +67,8 @@ body {
 select, input {
   margin: 2px;
   width: 70%;
+  max-width: 500px;
+  height: 70px;
 }
 
 h1 {
@@ -105,7 +107,7 @@ h1 {
 
 @media ( min-width: 768px ) {
   .inp {
-    font-size: 1.9m;
+    font-size: 2em;
   }
   
   .rwd-table {
@@ -114,10 +116,10 @@ h1 {
 }
 @media ( min-width: 1024px ) {
   .inp {
-    font-size: 1em;
+    font-size: 2em;
   }
   
   .rwd-table {
-    font-size: 1em;
+    font-size: 2em;
   }
 }
